@@ -1,0 +1,261 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0099ff;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #0099ff;
+}
+
+/* Sign In Button */
+nav ul li:nth-last-child(2) a {
+    color: gray;
+    font-weight: 600;
+}
+
+/* Sign Up Button */
+.btn {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #007acc;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+
+/* Search Box */
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.search-tabs {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.search-tabs li {
+    list-style: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-tabs .active {
+    color: #0099ff;
+    border-bottom: 3px solid #0099ff;
+    padding-bottom: 5px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.search-form input {
+    width: 22%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background-color: #0099ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    background-color: #007acc;
+}
+
+/* Popular Places */
+.popular {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.destination {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.destination h3 {
+    margin-top: 10px;
+}
+
+/* Travel Memories */
+.memories {
+    padding: 50px 10%;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.memory-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.memory-text {
+    width: 50%;
+    text-align: left;
+}
+
+.memory-text p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.memory-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* Explore More */
+.explore-more {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.explore-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.explore-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.explore-item:hover {
+    transform: translateY(-5px);
+}
+
+.explore-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.explore-item h3 {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
