@@ -350,7 +350,7 @@ footer {
     cursor: pointer;
     transition: background 0.3s ease;
 }
-
+/*hh*/
 .payment-form button:hover {
     background: #005f8f;
 }
