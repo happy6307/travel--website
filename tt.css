@@ -1,261 +1,369 @@
-/* Global Styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    scroll-behavior: smooth;
 }
 
-/* Header */
+/* Header Section */
 header {
+    background: #0077b6;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* Logo */
 .logo {
-    font-size: 24px;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #0099ff;
 }
 
-/* Navbar */
+.logo span {
+    color: #ffdd00;
+}
+
 nav ul {
-    list-style: none;
     display: flex;
-    align-items: center;
+    list-style: none;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
+    font-size: 1rem;
 }
 
-nav ul li a:hover {
-    color: #0099ff;
-}
-
-/* Sign In Button */
-nav ul li:nth-last-child(2) a {
-    color: gray;
-    font-weight: 600;
-}
-
-/* Sign Up Button */
-.btn {
-    background-color: #0099ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-.btn:hover {
-    background-color: #007acc;
-}
-
-/* Hero Section */
+/* Hero Section with Slider */
+/* Hero Section with Slider */
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    height: 400px;
+    position: relative;
+    background: url('va.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 40px;
-}
-
-.hero h2 {
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.hero p {
-    font-size: 18px;
-    margin: 10px 0 20px;
-}
-
-/* Search Box */
-.search-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 900px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.search-tabs {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #ddd;
-}
-
-.search-tabs li {
-    list-style: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.search-tabs .active {
-    color: #0099ff;
-    border-bottom: 3px solid #0099ff;
-    padding-bottom: 5px;
-}
-
-.search-form {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.search-form input {
-    width: 22%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.search-btn {
-    background-color: #0099ff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-.search-btn:hover {
-    background-color: #007acc;
-}
-
-/* Popular Places */
-.popular {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.destination-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.destination {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.destination:hover {
-    transform: translateY(-5px);
-}
-
-.destination img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.destination h3 {
-    margin-top: 10px;
-}
-
-/* Travel Memories */
-.memories {
-    padding: 50px 10%;
-    background: #f8f9fa;
-    text-align: center;
-}
-
-.memory-content {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+}
+
+/* Slider Styles */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Add individual slide background images 
+.slide1 {
+    background: url('va.jpg') no-repeat center center/cover;
+}
+
+.slide2 {
+    background: url('people.jpg') no-repeat center center/cover;
+}
+
+.slide3 {
+    background: url('travel.jpg') no-repeat center center/cover;
+}*/
+.slide2 {
+    background: url('people.jpg') no-repeat center center/cover;
+}
+
+.slide3 {
+    background: url('travel.jpg') no-repeat center center/cover;
+}
+
+
+/* Show the active slide */
+.slide.active {
+    opacity: 1;
+}
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.slider-btn.prev {
+    left: 20px;
+}
+
+.slider-btn.next {
+    right: 20px;
+}
+
+/* Add hover effect */
+.slider-btn:hover {
+    background: #ffdd00;
+    color: #333;
+}
+
+/* Hero Content */
+.hero-content {
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ffdd00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Destinations Section */
+.destinations-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     margin-top: 30px;
 }
 
-.memory-text {
-    width: 50%;
+.card {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+/* Booking Section */
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
     text-align: left;
 }
 
-.memory-text p {
-    margin-bottom: 15px;
-    font-size: 16px;
+.booking-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-.memory-image img {
+.booking-form select,
+.booking-form input,
+.booking-form button {
     width: 100%;
-    max-width: 450px;
-    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
 }
 
-/* Explore More */
-.explore-more {
-    text-align: center;
-    padding: 50px 0;
+/* Contact Section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.explore-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 20px;
-}
-
-.explore-item {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.explore-item:hover {
-    transform: translateY(-5px);
-}
-
-.explore-item img {
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
     width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-}
-
-.explore-item h3 {
+    padding: 10px;
     margin-top: 10px;
 }
 
 /* Footer */
 footer {
-    background: #222;
-    color: white;
+    background: #0077b6;
+    color: #fff;
     text-align: center;
     padding: 15px;
-    margin-top: 50px;
+}
+
+/* Slider Navigation Buttons (Optional) */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 18px;
+}
+
+.slider-btn.prev {
+    left: 20px;
+}
+
+.slider-btn.next {
+    right: 20px;
+}
+/* Travel Tips Section */
+.travel-tips {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.travel-tips h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.tips-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tip-card {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-10px);
+}
+
+.tip-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.tip-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #0077b6;
+}
+
+.tip-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+/* Payment Form Styles */
+.payment-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.payment-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-form button {
+    margin-top: 20px;
+    background: #0077b6;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.payment-form button:hover {
+    background: #005f8f;
+}
+.thank-you {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #c4d31a;
+    border-top: 2px solid #0077b6;
+}
+
+.thank-you p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
 }

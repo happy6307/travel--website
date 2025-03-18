@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
+    <title>Explore World - Travel Website</title>
     <link rel="stylesheet" href="tt.css">
-</head>
-<body>
+    <script src="script.js"></script>
 
-    <!-- Navbar -->
+</head>
+
+<body>
+    <!-- Header Section -->
     <header>
-        <h1 class="logo">TripCo</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Ticket</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Activity</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><button class="btn">Sign Up</button></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">Explore<span>World</span></h1>
+            <nav>
+                <ul>
+                
+
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="payment.html" class="btn">Proceed to Payment</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <h2>Explore the whole world and enjoy its beauty</h2>
-        <p>Find and write about your experiences around the world.</p>
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+        </div>
+        
+        <div class="hero-content">
+          <!--  <img src="va.jpg" alt="Test Image" width="300" height="200" />-->
 
-        <div class="search-box">
-            <ul class="search-tabs">
-                <li class="active">Hostelry</li>
-                <li>Flights</li>
-                <li>Bus & Shuttle</li>
-                <li>Cars</li>
-            </ul>
-            <div class="search-form">
-                <input type="text" placeholder="Destination">
-                <input type="date" placeholder="Check-in">
-                <input type="date" placeholder="Check-out">
-                <input type="text" placeholder="Room & Guest">
-                <button class="search-btn">Search</button>
+
+            <h2>Discover Your Next Adventure</h2>
+            <p>Explore the world's most beautiful places with us.</p>
+           <!-- <a href="#booking" class="btn">Book Now</a>-->
+            <a href="booh.html" target="_blank" class="btn">Book Now</a>
+        </div>
+        <button class="slider-btn prev">&lt;</button>
+        <button class="slider-btn next">&gt;</button>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="section">
+        <h2>Popular Destinations</h2>
+        <div class="destinations-container">
+            <div class="card">
+                <img src="balloon.jog.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>Experience crystal-clear water and white sandy beaches.</p>
+            </div>
+            <div class="card">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Explore the city of love and art.</p>
+            </div>
+            <div class="card">
+                <img src="t.jpg" alt="Bali">
+                <h3>Bali</h3>
+                <p>Relax on stunning beaches and lush landscapes.</p>
             </div>
         </div>
     </section>
 
-    <!-- Popular Places -->
-    <section class="popular">
-        <h2>Popular Places</h2>
-        <div class="destination-container">
-            <div class="destination">
-                <img src="bali.jpg" alt="Bali">
-                <h3>Bali, Indonesia</h3>
-            </div>
-            <div class="destination">
-                <img src="disneyland.jpg" alt="Disneyland">
-                <h3>Disneyland, Tokyo</h3>
-            </div>
-            <div class="destination">
-                <img src="tuscany.jpg" alt="Tuscany">
-                <h3>Tuscany, Italy</h3>
-            </div>
-            <div class="destination">
-                <img src="basilica.jpg" alt="Basilica">
-                <h3>Basilica, Italy</h3>
-            </div>
+    <!-- Travel Tips Section -->
+<section id="booking" class="section travel-tips">
+    <h2>Travel Tips & Insights</h2>
+    <p>Explore some essential tips and insights to make your journey smooth and memorable.</p>
+    
+    <div class="tips-container">
+        <div class="tip-card">
+            <img src="pacakage.jpg" alt="Packing Tips">
+            <h3>Packing Tips</h3>
+            <p>Pack light and smart. Keep essentials handy and make a checklist to avoid missing anything.</p>
         </div>
+        <div class="tip-card">
+            <img src="budget.jpg" alt="Budget Planning">
+            <h3>Budget Planning</h3>
+            <p>Plan your budget ahead. Include all expenses and keep extra cash for emergencies.</p>
+        </div>
+        <div class="tip-card">
+            <img src="safety.jpg" alt="Safety Guidelines">
+            <h3>Safety Guidelines</h3>
+            <p>Research about local laws, stay connected, and be cautious about personal belongings.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
-    <!-- Travel Memories -->
-    <section class="memories">
-        <h2>Travel to make sweet memories</h2>
-        <p>Find trips that fit a flexible lifestyle.</p>
-        <div class="memory-content">
-            <div class="memory-text">
-                <p>Find trips that fit your freedom. Explore cities, beaches, and mountains at your own pace.</p>
-                <p>Get back to nature by traveling. Experience the beauty of the natural world like never before.</p>
-                <p>Reignite those travel tastebuds. Enjoy cultural foods while discovering new destinations.</p>
-                <button class="btn">Start Your Adventure</button>
-            </div>
-            <div class="memory-image">
-                <img src="mountain.jpg" alt="Mountain Adventure">
-            </div>
-        </div>
-    </section>
-
-    <!-- Explore More -->
-    <section class="explore-more">
-        <h2>Explore More</h2>
-        <p>Let’s go on an adventure.</p>
-        <div class="explore-container">
-            <div class="explore-item">
-                <img src="paris.jpg" alt="Iceland">
-                <h3>Iceland</h3>
-            </div>
-            <div class="explore-item">
-                <img src="taj.jpg" alt="Taj Mahal">
-                <h3>Taj Mahal, India</h3>
-            </div>
-            <div class="explore-item">
-                <img src="balloon.jog.jpg" alt="Hot Air Balloon">
-                <h3>Hot Air Balloon</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 TripCo. All rights reserved.</p>
+        <p>&copy; 2025 ExploreWorld. All rights reserved.</p>
+        <section class="thank-you">
+            <p>Thank you for visiting! ❤️<br>From Vaibhav Mishra</p>
+        </section>
+        
     </footer>
 
 </body>
+
 </html>
