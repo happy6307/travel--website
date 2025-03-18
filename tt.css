@@ -145,7 +145,12 @@ nav ul li a {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
-
+@media (max-width: 768px) {
+    .hero-content {
+      width: 90%;
+      padding: 15px;
+    }
+}  
 .hero-content h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -163,7 +168,12 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
 }
-
+@media (max-width: 480px) {
+    .hero-content {
+      width: 100%;
+      padding: 10px;
+    }
+}  
 /* Section Styles */
 .section {
     padding: 60px 20px;
