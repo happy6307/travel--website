@@ -314,7 +314,11 @@ footer {
     color: #555;
 }
 /* Payment Form Styles */
+.payment{
+    background: url('t.jpg') no-repeat center center/cover;
+}
 .payment-form {
+    background: url('t.jpg') no-repeat center center/cover;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
