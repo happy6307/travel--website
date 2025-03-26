@@ -10,7 +10,9 @@ body {
     background-color: #f4f4f9;
     scroll-behavior: smooth;
 }
-
+body.form-page{
+    margin-top: 50px;
+}
 /* Header Section */
 header {
     background: #0077b6;
