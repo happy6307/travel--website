@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 6px !important;
+    text-align: center;
+    background-color: #f4f4f4;
+    background: url('people.jpg');
+    background-size: cover;
+
+}
+/* Flex container for name fields */
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px; /* Space between the fields */
+    margin-bottom: 10px;
+}
+
+/* Style each input container */
+.form-row .form-group {
+    width: 48%; /* Set width to keep them on the same line */
+    max-width: 600px;
+}
+
+/* Make sure input and select look uniform */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+
+    background-color:rgb(14, 211, 201);
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+ button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
