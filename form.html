@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="tt.css">
+
+    <link rel="stylesheet" type="text/css" href="form.css">
+    
+    <!-- Link second CSS file -->
+    <script src="form.js"></script>
+    
+</head>
+<body class="form-page">
+    <header>
+        <div class="container">
+            <h1 class="logo">Explore<span>World</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#destinations">Destinations</a></li>
+                    <li><a href="booh.html">Book Now</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div class="container">
+    <form id="form"  action="submit" method="post">
+        
+        <div class="form-row">
+            <div class="form-group">
+            <label for="first"><b>First Name</b></label>
+            <input type="first" id="first" name="first" placeholder="first name">
+
+        </div>
+        <div class="form-group">
+            <label for="last"><b>Last Name</b></label>
+            <input type="last" id="last" name="last" placeholder="last">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+        <label for="father name"><b>Father Name</b></label>
+        <input type="father name" id="father name" name="first" placeholder="father name">
+
+    </div>
+    <div class="form-group">
+        <label for="last"><b>Mother Name</b></label>
+        <input type="last" id="last" name="last" placeholder="mother name">
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group">
+    <label for="DOB"><b>Date of Birth</b></label>
+    <input type="date" id="DOB" name="DOB" required onchange="calculateAge()">
+
+</div>
+<div class="form-group">
+    <label for="age"><b>Age</b></label>
+    <input type="text" id="age" name="age" placeholder="age" readonly>
+</div>
+</div>
+
+<div class="form-group">
+    <label for="Gender"><b>Gender:</b></label>
+    <Select name="Gender" id="Gender" reuired>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="other">other</option>
+
+    </Select>
+</div>
+<div class="form-row">
+    <div class="form-group">
+    <label for="Phone no"><b>Phone no</b></label>
+    <input type="tel" id="Phone no" name="Phone no" placeholder="Enter 10 digit phone number" pattern="[0-9]{10}">
+
+</div>
+<div class="form-group">
+    <label for="email"><b>Email</b></label>
+    <input type="email" id="email" name="email" placeholder="xxxxx@gmail.com or xxxxx@xxx.ac.in">
+</div>
+</div>
+<div class="form-group">
+    <label for="resume"><b>Resume</b></label>
+    <input type="file" id="resume" name="resume" accept="pdf ,docx">
+</div>
+<div class="form-group">
+    <label for="photo"><b>Photo</b></label>
+    <input type="file" id="photo" name="photo" accept="image/*" required>
+</div>
+<div class="btn-container">
+    <button type="submit">Submit</button>
+</div>
+    </form>
+</div>
+<footer>
+    <p>&copy; 2025 ExploreWorld. All rights reserved.</p>
+    <section class="thank-you">
+        <p>Thank you for visiting! ❤️<br>From Vaibhav Mishra</p>
+    </section>
+    
+</footer>
+</body>
+</html>
