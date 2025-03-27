@@ -10,6 +10,14 @@ body {
     background-color: #f4f4f9;
     scroll-behavior: smooth;
 }
+#booking {
+    background: url('people.jpg');
+    background-size: cover;
+}
+#payment{
+    background: url('people.jpg');
+    background-size: cover;
+}
 body.form-page{
     margin-top: 50px;
 }
@@ -233,7 +241,8 @@ nav ul li a {
 
 /* Contact Section */
 .contact-form {
-    max-width: 600px;
+    background: url('people.jpg');
+    background-size: cover;    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -326,6 +335,7 @@ footer {
     color: #555;
 }
 /* Payment Form Styles */
+
 .payment{
     background: url('t.jpg') no-repeat center center/cover;
 }
